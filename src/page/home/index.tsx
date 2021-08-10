@@ -14,7 +14,7 @@ const HomePage = (): JSX.Element => {
   }));
 
   useEffect(() => {
-    if (loading && storeId !== undefined) dispatch({ type: '/getAllMenuBoardSaga', payload: { storeId }});
+    if (loading) dispatch({ type: '/getAllMenuBoardSaga', payload: { storeId }});
   }, []);
   
   if (loading) return <Loading/>

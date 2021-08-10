@@ -18,7 +18,7 @@ function* getMenuInfoSaga(action: {
   }
 };
 
-function* getOptionGroup(action: {
+function* getOptionGroupSaga(action: {
   type: string,
   payload: {
     menuId: number
@@ -34,5 +34,5 @@ function* getOptionGroup(action: {
 
 export function* detailSaga() {
   yield takeLatest('/detail/getMenuInfoSaga', getMenuInfoSaga);
-  yield takeLatest('/detail/getOptionGroup', getOptionGroup);
+  yield takeLatest('/detail/getOptionGroupSaga', getOptionGroupSaga);
 };

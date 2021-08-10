@@ -16,7 +16,7 @@ const DetailMenuPage = (): JSX.Element => {
   useEffect(() => {
     if (loading) {
       disaptch({ type: '/detail/getMenuInfoSaga', payload: { menuId } });
-      disaptch({ type: '/detail/getOptionGroup', payload: { menuId } });
+      disaptch({ type: '/detail/getOptionGroupSaga', payload: { menuId } });
     }
   }, []);
   
