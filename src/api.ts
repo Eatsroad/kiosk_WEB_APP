@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from "axios";
 import { MenuBoardResponse, MenuType, OptionGroupType, StoreInfo } from "./common/type";
 
 const api = axios.create({
-  baseURL: 'http://3.35.150.237:3000'
+  //
 });
 
 export const menuBoardAPI = {
